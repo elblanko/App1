@@ -1,6 +1,4 @@
-﻿<!-- instrucciones con "@" es lo que se renderiza por razor-->
-<!-- IEnumerable indica que es una lista-->
-@model IEnumerable<MVC1.Models.Products>
+﻿@model IEnumerable<MVC1.Models.Product>
 
 @{
     ViewBag.Title = "Index";
@@ -20,10 +18,10 @@
             @Html.DisplayNameFor(model => model.Price)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.LastBuy)
+            @Html.DisplayNameFor(model => model.Stock)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Stock)
+            @Html.DisplayNameFor(model => model.LastBuy)
         </th>
         <th></th>
     </tr>
@@ -37,15 +35,15 @@
             @Html.DisplayFor(modelItem => item.Price)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.LastBuy)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Stock)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            @Html.DisplayFor(modelItem => item.LastBuy)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.ID })
         </td>
     </tr>
 }

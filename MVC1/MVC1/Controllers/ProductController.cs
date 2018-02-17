@@ -1,20 +1,18 @@
 ﻿using MVC1.Context;
-using System;
-using System.Collections.Generic;
+using MVC1.Models;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace MVC1.Controllers
 {
     public class ProductController : Controller
     {
-        private StoreContext DataBase = new StoreContext();
+        private StoreContext db = new StoreContext();
         
         // GET: Product
         public ActionResult Index()
         {
-            return View(DataBase.MyProducts.ToList());
+            return View(db.Products.ToList());
         }
 
         // GET: Product/Details/5
@@ -24,6 +22,7 @@ namespace MVC1.Controllers
         }
 
         // GET: Product/Create
+        [HttpGet]
         public ActionResult Create()
         {
             return View();
@@ -31,17 +30,22 @@ namespace MVC1.Controllers
 
         // POST: Product/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Product product)
         {
             try
             {
                 // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+                if (ModelState.IsValid)
+                {
+                    db.Products.Add(product);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+                return View(product);
             }
             catch
             {
-                return View();
+                return View(product);
             }
         }
 

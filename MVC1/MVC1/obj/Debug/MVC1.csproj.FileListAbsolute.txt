@@ -84,7 +84,7 @@ C:\Users\crodriguez\Documents\C#\MVC1\MVC1\bin\es\Microsoft.Owin.Security.Facebo
 C:\Users\crodriguez\Documents\C#\MVC1\MVC1\bin\es\Microsoft.Owin.Security.Google.resources.dll
 C:\Users\crodriguez\Documents\C#\MVC1\MVC1\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
 C:\Users\crodriguez\Documents\C#\MVC1\MVC1\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-C:\Users\crodriguez\Documents\C#\MVC1\MVC1\obj\Debug\MVC1.csprojResolveAssemblyReference.cache
 C:\Users\crodriguez\Documents\C#\MVC1\MVC1\obj\Debug\MVC1.csproj.CoreCompileInputs.cache
 C:\Users\crodriguez\Documents\C#\MVC1\MVC1\obj\Debug\MVC1.dll
 C:\Users\crodriguez\Documents\C#\MVC1\MVC1\obj\Debug\MVC1.pdb
+C:\Users\crodriguez\Documents\C#\MVC1\MVC1\obj\Debug\MVC1.csprojResolveAssemblyReference.cache
