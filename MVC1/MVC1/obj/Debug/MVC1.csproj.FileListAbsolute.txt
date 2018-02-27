@@ -88,3 +88,6 @@ C:\Users\crodriguez\Documents\C#\MVC1\MVC1\obj\Debug\MVC1.csproj.CoreCompileInpu
 C:\Users\crodriguez\Documents\C#\MVC1\MVC1\obj\Debug\MVC1.dll
 C:\Users\crodriguez\Documents\C#\MVC1\MVC1\obj\Debug\MVC1.pdb
 C:\Users\crodriguez\Documents\C#\MVC1\MVC1\obj\Debug\MVC1.csprojResolveAssemblyReference.cache
+C:\Users\crodriguez\Documents\C#\MVC1\MVC1\obj\Debug\MVC1.Migrations.InitialCreate.resources
+C:\Users\crodriguez\Documents\C#\MVC1\MVC1\obj\Debug\MVC1.csproj.GenerateResource.Cache
+C:\Users\crodriguez\Documents\C#\MVC1\MVC1\obj\Debug\MVC1.Migrations.AddRemarksFieldFromModeltoDataBase.resources
